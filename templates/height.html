@@ -2,18 +2,27 @@
 <html>
 <head>
 <title> My Template </title>
+<style type="text/css">
+	h1 {
+		text-align: center;
+	}
+	form{
+		text-align: center;
+	}
+</style>
 </head>
-<body>
+<body style="background-color: lightgreen;">
  <div class="login">
-         <h1>Predict Real Estate Analysis</h1>
-     <form action="{{ url_for('predict')}}" method="post">
+         <h1>Height Weight Analysis</h1>
+     <form >
         <input type="text" name="Height" placeholder="Height" required="required" />
 		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-     </form>
-     <br>
-     <br>
-     {{ prediction_text }}
+		<br>
+		<br>
+		 {{ prediction_text }}
 
+     </form>
+     
  </div>
 </body>
 </html>
